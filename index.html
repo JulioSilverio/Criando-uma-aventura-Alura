@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>Em busca do tesouro perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Durante uma limpeza no sótão da sua casa, você encontra um mapa antigo que pertenceu ao seu bisavô, indicando a localização de um tesouro perdido. Decidido a seguir as pistas, você embarca em uma aventura emocionante!</p>
+            <button class="btn-proximo" data-proximo="1">Floresta Amazônica</button>
+            <button class="btn-proximo" data-proximo="2">Deserto do Saara</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada na Floresta Amazônica, navegando pelo Rio Amazonas em busca da primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Explorar a margem do rio</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No Deserto do Saara, você enfrenta tempestades de areia e calor intenso. A primeira pista está escondida em uma antiga ruína.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as ruínas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as dunas</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Na margem do Rio Amazonas, você encontra uma inscrição antiga indicando que a próxima pista está nas Montanhas Rochosas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para as Montanhas Rochosas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você decide que a aventura é perigosa demais e volta para casa, mas sempre se pergunta o que teria encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Nas ruínas do deserto, você descobre um artefato antigo que aponta para a próxima pista nas Montanhas Rochosas.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para as Montanhas Rochosas</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando as dunas, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e investigar as ruínas</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Nas Montanhas Rochosas, a busca pelo tesouro perdido se intensifica. Você se depara com uma bifurcação no caminho.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo caminho à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo caminho à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta às ruínas, você finalmente encontra o artefato antigo. Agora, para as Montanhas Rochosas!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para as Montanhas Rochosas</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>O caminho à esquerda leva você a uma caverna escondida com inscrições antigas que revelam a localização do tesouro perdido.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O caminho à direita leva você a uma vila isolada. Os habitantes locais oferecem ajuda em troca de sua promessa de proteger o tesouro.</p>
+            <button class="btn-proximo" data-proximo="11">Aceitar a ajuda</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Com a ajuda dos habitantes locais, você finalmente encontra o tesouro perdido, cheio de riquezas e artefatos históricos. Sua jornada chega ao fim com sucesso!</p>
+            <button class="btn-recomecar" onclick="location.reload()">Recomeçar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+      
